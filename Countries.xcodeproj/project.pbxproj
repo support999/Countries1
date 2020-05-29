@@ -3,19 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4131EA5C247FA14F0008C18A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4131EA5B247FA14F0008C18A /* WebKit.framework */; };
+		41FE4104247F032200F54A9C /* country_list_cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FE4103247F032200F54A9C /* country_list_cell.swift */; };
+		DDA7767EFF302E15EA75D786 /* Pods_Countries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 895710ECBDA050795AFFF314 /* Pods_Countries.framework */; };
 		E157DDCA247E8F7600C3DDAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157DDC9247E8F7600C3DDAC /* AppDelegate.swift */; };
 		E157DDCC247E8F7600C3DDAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157DDCB247E8F7600C3DDAC /* SceneDelegate.swift */; };
 		E157DDCE247E8F7600C3DDAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157DDCD247E8F7600C3DDAC /* ViewController.swift */; };
 		E157DDD1247E8F7600C3DDAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E157DDCF247E8F7600C3DDAC /* Main.storyboard */; };
 		E157DDD3247E8F7A00C3DDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E157DDD2247E8F7A00C3DDAC /* Assets.xcassets */; };
 		E157DDD6247E8F7A00C3DDAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E157DDD4247E8F7A00C3DDAC /* LaunchScreen.storyboard */; };
+		E157DE12247EA05800C3DDAC /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157DE11247EA05800C3DDAC /* CountryModel.swift */; };
+		E157DE18247EA0BB00C3DDAC /* CountryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157DE17247EA0BB00C3DDAC /* CountryDetailsViewController.swift */; };
+		E157DE1B247EA0ED00C3DDAC /* APIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E157DE1A247EA0ED00C3DDAC /* APIServiceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4131EA5B247FA14F0008C18A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		41FE4103247F032200F54A9C /* country_list_cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = country_list_cell.swift; sourceTree = "<group>"; };
+		57752D12D494A28FAB8DD564 /* Pods-Countries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries.release.xcconfig"; path = "Target Support Files/Pods-Countries/Pods-Countries.release.xcconfig"; sourceTree = "<group>"; };
+		895710ECBDA050795AFFF314 /* Pods_Countries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Countries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E157DDC6247E8F7600C3DDAC /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E157DDC9247E8F7600C3DDAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E157DDCB247E8F7600C3DDAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,10 @@
 		E157DDD2247E8F7A00C3DDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E157DDD5247E8F7A00C3DDAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E157DDD7247E8F7A00C3DDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E157DE11247EA05800C3DDAC /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		E157DE17247EA0BB00C3DDAC /* CountryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsViewController.swift; sourceTree = "<group>"; };
+		E157DE1A247EA0ED00C3DDAC /* APIServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceManager.swift; sourceTree = "<group>"; };
+		F5C853938D3798FDEF071404 /* Pods-Countries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries.debug.xcconfig"; path = "Target Support Files/Pods-Countries/Pods-Countries.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4131EA5C247FA14F0008C18A /* WebKit.framework in Frameworks */,
+				DDA7767EFF302E15EA75D786 /* Pods_Countries.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BC71964D169673E0A1FB52D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5C853938D3798FDEF071404 /* Pods-Countries.debug.xcconfig */,
+				57752D12D494A28FAB8DD564 /* Pods-Countries.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4131EA5E248045370008C18A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E157DDC9247E8F7600C3DDAC /* AppDelegate.swift */,
+				E157DDCB247E8F7600C3DDAC /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		41FE4102247F02F500F54A9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41FE4103247F032200F54A9C /* country_list_cell.swift */,
+				E157DDCF247E8F7600C3DDAC /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E157DDBD247E8F7600C3DDAC = {
 			isa = PBXGroup;
 			children = (
 				E157DDC8247E8F7600C3DDAC /* Countries */,
 				E157DDC7247E8F7600C3DDAC /* Products */,
+				1BC71964D169673E0A1FB52D /* Pods */,
+				F5A6DD832A1186CFDADE82CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +101,50 @@
 		E157DDC8247E8F7600C3DDAC /* Countries */ = {
 			isa = PBXGroup;
 			children = (
-				E157DDC9247E8F7600C3DDAC /* AppDelegate.swift */,
-				E157DDCB247E8F7600C3DDAC /* SceneDelegate.swift */,
-				E157DDCD247E8F7600C3DDAC /* ViewController.swift */,
-				E157DDCF247E8F7600C3DDAC /* Main.storyboard */,
+				4131EA5E248045370008C18A /* AppDelegate */,
+				E157DE10247EA03300C3DDAC /* Model */,
+				41FE4102247F02F500F54A9C /* View */,
+				E157DE16247EA08D00C3DDAC /* Controller */,
+				E157DE19247EA0C400C3DDAC /* Service */,
 				E157DDD2247E8F7A00C3DDAC /* Assets.xcassets */,
 				E157DDD4247E8F7A00C3DDAC /* LaunchScreen.storyboard */,
 				E157DDD7247E8F7A00C3DDAC /* Info.plist */,
 			);
 			path = Countries;
+			sourceTree = "<group>";
+		};
+		E157DE10247EA03300C3DDAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E157DE11247EA05800C3DDAC /* CountryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E157DE16247EA08D00C3DDAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E157DDCD247E8F7600C3DDAC /* ViewController.swift */,
+				E157DE17247EA0BB00C3DDAC /* CountryDetailsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E157DE19247EA0C400C3DDAC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E157DE1A247EA0ED00C3DDAC /* APIServiceManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F5A6DD832A1186CFDADE82CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4131EA5B247FA14F0008C18A /* WebKit.framework */,
+				895710ECBDA050795AFFF314 /* Pods_Countries.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +154,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E157DDDA247E8F7A00C3DDAC /* Build configuration list for PBXNativeTarget "Countries" */;
 			buildPhases = (
+				701D84CD0A1021E1A229B8C2 /* [CP] Check Pods Manifest.lock */,
 				E157DDC2247E8F7600C3DDAC /* Sources */,
 				E157DDC3247E8F7600C3DDAC /* Frameworks */,
 				E157DDC4247E8F7600C3DDAC /* Resources */,
+				4A3F27F84445A07BF5902B01 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +215,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A3F27F84445A07BF5902B01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Countries/Pods-Countries-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Countries/Pods-Countries-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Countries/Pods-Countries-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		701D84CD0A1021E1A229B8C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Countries-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E157DDC2247E8F7600C3DDAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E157DDCE247E8F7600C3DDAC /* ViewController.swift in Sources */,
+				E157DE1B247EA0ED00C3DDAC /* APIServiceManager.swift in Sources */,
 				E157DDCA247E8F7600C3DDAC /* AppDelegate.swift in Sources */,
+				E157DE12247EA05800C3DDAC /* CountryModel.swift in Sources */,
 				E157DDCC247E8F7600C3DDAC /* SceneDelegate.swift in Sources */,
+				41FE4104247F032200F54A9C /* country_list_cell.swift in Sources */,
+				E157DE18247EA0BB00C3DDAC /* CountryDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +410,7 @@
 		};
 		E157DDDB247E8F7A00C3DDAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C853938D3798FDEF071404 /* Pods-Countries.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +429,7 @@
 		};
 		E157DDDC247E8F7A00C3DDAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57752D12D494A28FAB8DD564 /* Pods-Countries.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.2.1)
+  - CocoaLumberjack (3.6.1):
+    - CocoaLumberjack/Core (= 3.6.1)
+  - CocoaLumberjack/Core (3.6.1)
+  - MBProgressHUD (1.2.0)
+  - SVGKit (2.1.1):
+    - CocoaLumberjack (~> 3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - MBProgressHUD
+  - SVGKit (~> 2.1.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaLumberjack
+    - MBProgressHUD
+    - SVGKit
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  CocoaLumberjack: b17ae15142558d08bbacf69775fa10c4abbebcc9
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SVGKit: 652cdf7bef8bec8564d04a8511d3ab50c7595fac
+
+PODFILE CHECKSUM: 3f6373a213c8bf0cfab5ee8a3868271f97908a4b
+
+COCOAPODS: 1.8.4
